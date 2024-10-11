@@ -1,5 +1,5 @@
-#Problem: SingleNumber
-#Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+##Problem: SingleNumber
+##Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 ##Example 1:
@@ -40,4 +40,4 @@ public class SingleNumber {
 '''
 
 ##Explanation:
-* *This program uses the XOR operation because it has a unique property: a ^ a = 0 and a ^ 0 = a. So, when you XOR all the numbers together, pairs will cancel each other out, leaving the single number that appears only once.
+This program uses the XOR operation because it has a unique property: a ^ a = 0 and a ^ 0 = a. So, when you XOR all the numbers together, pairs will cancel each other out, leaving the single number that appears only once.
