@@ -2,7 +2,7 @@
 
 # Java Collections and Algorithms Cheat Sheet
 ## Collections Framework
-
+![image](https://github.com/user-attachments/assets/09421f79-6f65-4fde-af78-9373d4051aeb)
 # List
 ## ArrayList
 ```
