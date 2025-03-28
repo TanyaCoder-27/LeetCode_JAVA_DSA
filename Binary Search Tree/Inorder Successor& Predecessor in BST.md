@@ -69,9 +69,9 @@ public class Solution {
 # Inorder Successor in Binary Search Tree (BST)
 
 ## Problem Description
-Write a Java method to find the **inorder successor** of a given node in a Binary Search Tree (BST). The inorder successor of a node `p` is the smallest node in the BST whose value is greater than `p.val`. The method should use the properties of a BST to find the successor efficiently in `O(h)` time, where `h` is the height of the tree, without using additional space.
+The **inorder successor** of a node `p` is the smallest node in the BST whose value is greater than `p.val`. Write a method to find the inorder successor efficiently using the properties of a BST. The method should run in **O(h)** time, where `h` is the height of the tree, without using additional space.
 
-If no successor exists (e.g., if the node is the largest value in the tree), the method should return `null`. Implement the solution using an **iterative approach**, as outlined below.
+If no successor exists (e.g., if the node is the largest value in the tree), the method should return `null`.
 
 ---
 
@@ -82,6 +82,7 @@ public class Solution {
         // Method implementation here
     }
 }
+
 
 ```
 /**
