@@ -66,6 +66,8 @@ public class Solution {
 ```
 
 
+---------------------------------------------------------
+
 ### Inorder Successor in Binary Search Tree (BST)
 
 ## Problem Description
