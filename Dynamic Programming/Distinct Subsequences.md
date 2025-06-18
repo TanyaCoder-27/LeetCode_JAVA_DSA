@@ -33,7 +33,7 @@ Constraints:
 1 <= s.length, t.length <= 1000
 s and t consist of English letters.
 
-
+### Java Solution:
 ```
 class Solution {
     public int numDistinct(String s, String t) {
