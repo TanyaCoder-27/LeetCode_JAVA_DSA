@@ -50,7 +50,66 @@ class Solution {
         return Math.max(comp(arr1),comp(arr2));
         
     }
+/*
 
+### 🧠 What’s the core challenge?
+
+If the houses were in a **straight line**, we could just apply the usual DP logic.
+
+But here, the first and last houses are **neighbors**. So we can't rob both `nums[0]` and `nums[n-1]`.
+
+### So what's the trick?
+
+We split the problem into **two cases**:
+1. Rob from **house 1 to n-1** (skip the first house)
+2. Rob from **house 0 to n-2** (skip the last house)
+
+Then we just take the **maximum** of both scenarios.
+
+---
+
+### 🔍 Breakdown of `rob(int[] nums)`
+
+```java
+int n = nums.length;
+```
+We store the number of houses.
+
+```java
+int[] arr1 = new int[n];
+int[] arr2 = new int[n];
+```
+Two arrays to simulate the two cases:
+- `arr1`: excludes the **first house**
+- `arr2`: excludes the **last house**
+
+```java
+if(n == 1) return nums[0];
+```
+Edge case: if there’s only one house, just rob it.
+
+---
+
+### ⛏️ Fill arr1 and arr2
+
+```java
+for(int i = 0; i < n; i++) {
+    if(i != 0) arr1[i] = nums[i];      // exclude first house
+    if(i != n - 1) arr2[i] = nums[i];  // exclude last house
+}
+```
+
+Now we compute max loot from these two subarrays using the `comp()` helper.
+
+```java
+return Math.max(comp(arr1), comp(arr2));
+```
+
+Whichever gives the better result — that’s the answer.
+
+---
+
+*/
     public static int comp(int[] arr){
         int n = arr.length;
         
@@ -71,3 +130,5 @@ class Solution {
         return prev;
     }
 }
+
+
